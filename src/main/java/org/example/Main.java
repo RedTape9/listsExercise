@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println(school.getStudents().toString());
 
-        System.out.println(school.showStudentWithMatrikelNumber(12345));
+        System.out.println(school.getStudentWithMatrikelNumber(12345));
 
         school.deleteStudentWithMatrikelNumber(12345);
 
@@ -22,14 +22,14 @@ public class Main {
         Course deutsch = new Course("Deutsch", "Frau Schmidt", 102);
         Course englisch = new Course("Englisch", "Frau Meier", 103);
 
-        school.showStudentWithMatrikelNumber(12346).addCourse(mathe);
-        school.showStudentWithMatrikelNumber(12347).addCourse(deutsch);
-        school.showStudentWithMatrikelNumber(12347).addCourse(englisch);
+        school.getStudentWithMatrikelNumber(12346).addCourse(mathe);
+        school.getStudentWithMatrikelNumber(12347).addCourse(deutsch);
+        school.getStudentWithMatrikelNumber(12347).addCourse(englisch);
 
         System.out.println("\n");
 
-        System.out.println(school.showStudentWithMatrikelNumber(12347).toString());
-        System.out.println(school.showStudentWithMatrikelNumber(12347).getCourses().toString());
+        System.out.println(school.getStudentWithMatrikelNumber(12347).toString());
+        System.out.println(school.getStudentWithMatrikelNumber(12347).getCourses().toString());
 
 
     }

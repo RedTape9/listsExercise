@@ -20,7 +20,7 @@ public class School {
         students.add(student);
     }
 
-    public Student showStudentWithMatrikelNumber(int matrikelNumber) {
+    public Student getStudentWithMatrikelNumber(int matrikelNumber) {
         for (Student student : students) {
             if (student.getMatrikelNumber() == matrikelNumber) {
                 return student;
@@ -34,13 +34,9 @@ public class School {
     }*/
 
     public void deleteStudentWithMatrikelNumber(int matrikelNumber) {
-        Student studentToDelete = null;
-        for (Student student : students) {
-            if (student.getMatrikelNumber() == matrikelNumber) {
-                studentToDelete = student;
+            if (getStudentWithMatrikelNumber(matrikelNumber) != null) {
+                students.remove(getStudentWithMatrikelNumber(matrikelNumber));
             }
-        }
-        students.remove(studentToDelete);
     }
 
     @Override
