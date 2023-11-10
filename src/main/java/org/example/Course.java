@@ -38,6 +38,7 @@ public class Course {
         this.roomNumber = roomNumber;
     }
 
+    // METHODS
     @Override
     public String toString() {
         return "Course{" +

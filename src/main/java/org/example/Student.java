@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 
 public class Student {
+    // ATTRIBUTES
     private String name;
     private String surname;
     private int matrikelNumber;
@@ -10,6 +11,8 @@ public class Student {
     public String getName() {
         return name;
     }
+
+    // SETTERS AND GETTERS
 
     public void setName(String name) {
         this.name = name;
@@ -31,13 +34,19 @@ public class Student {
         this.matrikelNumber = matrikelNumber;
     }
 
+    public Object getCourses() {
+        return courses;
+    }
+
+    // CONSTRUCTOR
+
     public Student(String name, String surname, int number) {
         this.name = name;
         this.surname = surname;
         this.matrikelNumber = number;
     }
 
-    // Füge eine Methode hinzu, mit der man course zum student hinzufügt
+    // METHODS
     public void addCourse(Course course) {
         courses.add(course);
     }
@@ -51,7 +60,4 @@ public class Student {
                 '}';
     }
 
-    public Object getCourses() {
-        return courses;
-    }
 }
