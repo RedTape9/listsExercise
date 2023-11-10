@@ -8,7 +8,6 @@ public class Main {
         school.addStudent(new Student("Max", "Mustermann", 12347));
         school.addStudent(new Student("Maria", "Mustermann", 12348));
 
-
         System.out.println(school.getStudents().toString());
 
         System.out.println(school.showStudentWithMatrikelNumber(12345));
